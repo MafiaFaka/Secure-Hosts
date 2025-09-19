@@ -33,6 +33,7 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nav .container {
@@ -50,8 +51,6 @@ body {
 .logoimg {
     height: 60px;
     width: auto;
-    margin-right: 25px;
-    vertical-align: middle;
 }
   
 .menu-toggle {
