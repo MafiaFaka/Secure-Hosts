@@ -92,7 +92,7 @@ nav a:hover {
 }
   
 .cta-button {
-    background: #ED1A1A;
+    background: linear-gradient(180deg, #ED1A1A, #830606); /* degradado colorido */
     color: #121212;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -102,7 +102,7 @@ nav a:hover {
 }
   
 .cta-button:hover {
-    background: #b41313;
+    background: linear-gradient(180deg, #b41313, #490303); /* degradado colorido */
 }
   
 /* SECCIONES */
