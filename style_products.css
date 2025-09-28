@@ -1,4 +1,4 @@
-/* Reseteo de valores */
+/* Estilos por defecto */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
 }
 
 /* Contenedor para centrar contenido */
-
 .container {
     width: 100%;
     max-width: 1500px;
@@ -21,9 +20,8 @@ body {
 }
 
 /* Nav */
-
 .nav {
-    background: #111;
+    background: #161616;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -43,12 +41,13 @@ body {
 }
   
 .logo {
-    font-size: 1.8rem;
-    color: #ED1A1A;
+    font-size: 2rem;
+    color: #c21414;
     font-weight: bold;
 }
 
 .logoimg {
+    margin-right: 10px;
     height: 60px;
     width: auto;
 }
@@ -71,6 +70,7 @@ nav a {
   
 nav a:hover {
     color: #ED1A1A;
+    transform: translateY(-2px);
 }
   
 /* HERO */
@@ -91,20 +91,6 @@ nav a:hover {
     margin-bottom: 2rem;
 }
   
-.cta-button {
-    background: linear-gradient(180deg, #ED1A1A, #830606); /* degradado colorido */
-    color: #121212;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-  
-.cta-button:hover {
-    background: linear-gradient(180deg, #b41313, #490303); /* degradado colorido */
-}
-  
 /* SECCIONES */
 .section {
     padding: 4rem 1rem;
@@ -112,8 +98,12 @@ nav a:hover {
     margin: 0 auto;
 }
   
-/* GAMES */
-.game-carousel {
+/* PRODCUTOS */
+.h2_prod{
+    font-size: 50px;
+}
+
+.prod-carousel {
     display: flex;
     overflow-x: auto;
     overflow: visible;
@@ -122,7 +112,7 @@ nav a:hover {
     scroll-behavior: smooth;
 }
   
-.game-card {
+.prod-card {
     min-width: 260px;
     background: #222;
     color: #eee;
@@ -132,7 +122,7 @@ nav a:hover {
     transition: all 0.3s ease;
 }
   
-.game-card img {
+.prod-card img {
     width: 100%;
     max-width: 280px;
     max-height: 180px;
@@ -142,129 +132,56 @@ nav a:hover {
     border-radius: 6px;
 }
   
-.game-card h3 {
+.prod-card h3 {
     margin-top: 0.5rem;
     font-size: 1.2rem;
 }
   
-.game-card p {
+.prod-card p {
     font-size: 0.9rem;
     margin: 0.4rem 0;
 }
   
-.game-card a {
-    display: inline-block;
+.prod-card a {
+
     margin-top: 0.5rem;
-    color: #ED1A1A;
+    color: #121212;
     text-decoration: none;
     font-weight: 600;
 }
-  
-.game-card a:hover {
-    text-decoration: underline;
-}
-  
-.game-card:hover {
-    box-shadow: 0 4px 20px rgba(212, 21, 21, 0.4);
-    transform: translateY(-5px);
-}
-  
-/* BLOG */
-.blog-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-}
-  
-.blog-list article {
-    background: #222;
-    padding: 1rem;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-  
-.blog-list img {
-    width: 100%;
-    height: auto;
-    max-height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
-}
-  
-.blog-list h3 {
-    margin-top: 0.5rem;
-}
-  
-.blog-list p {
-    font-size: 0.95rem;
-    margin: 0.4rem 0;
-}
-  
-.blog-list a {
-    color: #ED1A1A;
-    font-weight: 500;
-    text-decoration: none;
-}
-  
-.blog-list a:hover {
-    text-decoration: underline;
-}
-  
-.blog-list article:hover {
-    box-shadow: 0 4px 20px rgba(0,191,255,0.4);
-    transform: translateY(-5px);
-}
-  
-/* MERCH */
-.merch-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
-  
-.merch-item {
-    background: #222;
-    padding: 1rem;
-    text-align: center;
+
+.cta-button {
+    background: linear-gradient(180deg, #ED1A1A, #830606);
+    color: #121212;
+    padding: 1rem 2rem;
     border-radius: 8px;
-    transition: all 0.3s ease;
-}
-  
-.merch-item img {
-    width: 100%;
-    max-width: 220px;
-    max-height: 180px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border-radius: 6px;
-}
-  
-.merch-item h4 {
-    margin-top: 0.8rem;
-}
-  
-.merch-item p {
-    margin: 0.4rem 0;
     font-weight: bold;
-}
-  
-.merch-item a {
-    color: #ED1A1A;
-    font-weight: 600;
     text-decoration: none;
+    transition: background-color 5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
-.merch-item a:hover {
+.cta-button:hover {
+    background: linear-gradient(180deg, #b41313, #490303);
+    color: #121212 ;
+    transition: background-color 5s ease ;
+}
+
+.offer_title{
+    text-align: center;
+}
+  
+.prod-card a:hover {
     text-decoration: underline;
 }
   
-.merch-item:hover {
-    box-shadow: 0 4px 20px rgba(0,191,255,0.4);
-    transform: translateY(-5px);
+.prod-card:hover {
+    box-shadow: 0 4px 20px rgba(212, 21, 21, 0.4);
+    transform: translateY(-20px);
 }
-  
+
 /* FOOTER */
 .footer {
     background: #111;
@@ -313,9 +230,7 @@ nav a:hover {
       font-size: 1.5rem;
       user-select: none;
     }
-    .game-carousel,
-    .blog-list,
-    .merch-grid {
+    .prod-carousel{
       grid-template-columns: 1fr !important;
       flex-direction: column;
     }
