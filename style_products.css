@@ -157,7 +157,7 @@ nav a:hover {
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 5s ease;
+    transition: background-color 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +166,7 @@ nav a:hover {
 .cta-button:hover {
     background: linear-gradient(180deg, #b41313, #490303);
     color: #121212 ;
-    transition: background-color 5s ease ;
+    transition: background-color 0.3s ease ;
 }
 
 .offer_title{
