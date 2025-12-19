@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Secure Hosts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
-
+    
     <!-- Main -->
     <header class="nav">
         <div class="container">
@@ -18,45 +20,165 @@
             </div>
             <div class="menu-toggle">&#9776;</div>
             <nav>
-                <a href="#info">Information</a>
-                <a href="products.html">Products</a>
-                <a href="aboutus.html">About Us</a>
+                <p class="nav-btn" id="info">Information</p>
+                <p class="nav-btn" id="prod">Products</p>
+                <p class="nav-btn" id="about">About Us</p>
+                <p class="nav-btn" id="account">Account</p>
             </nav>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section id="info" class="hero">
-        <h2>Secure Hosts</h2>
-        <p>The best server hoster with the best speed and secure</p>
-        <a href="products.html" class="cta-button">Explore our Products</a>
-    </section>
 
-    <!-- CONTENT -->
-    
-    <section id="" class="content"></section>
+    <!-- INFORMATION -->
+    <article id="sec_info" class="scroll">
 
-    <!-- FOOTER -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-links">
-                <a href="#">Terms Of Service</a>
-                <a href="#">Refund Policy</a>
+        <!-- HERO -->
+        <section id="information" class="hero">
+            <h2>Secure Hosts</h2>
+            <p>The best server hoster with the best speed and secure</p>
+            <a id="prod2" class="explore-btn">Explore our Products</a>
+        </section>
+
+        <!-- CONTENT -->
+        <section id="" class="content"></section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Terms Of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="social">
+                    <a href="#">Twitter</a>
+                </div>
+                <p>©2025 Secure Hosts. All rights reserved.</p>
             </div>
-            <div class="social">
-                <a href="#">Twitter</a>
-            </div>
-            <p>©2025 Secure Hosts. All rights reserved.</p>
-        </div>
-    </footer>
+        </footer>
 
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
-        
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-    </script>
+    </article>
+
+
+    <!-- PRODUCTS -->
+    <article id="sec_prod" class="hidden scroll">
+
+        <!-- HERO -->
+        <section id="title" class="hero">
+            <h2>Our Products</h2>
+            <p>Check our what are our prices at our server hostings</p>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products" class="section">
+            <h2 class="h2_prod">Products</h2>
+            <div class="prod-carousel">
+                <div class="prod-card">
+                    <h3 class="offer_title">Basic Gaming Plan</h3>
+                    <p class="offer_title">Que ofrecemos:</p>
+                    <p class="offer_title">CPU: 4 núcleos</p>
+                    <p class="offer_title">RAM: 16GB</p>
+                    <p class="offer_title">Almacenamiento: 100GB</p>
+                    <p class="offer_title">Ancho de Banda: 100Mb/s</p>
+                    <h3 class="offer_title">7.99€</h3>
+                    <a class="cta-button" href="#" target="_blank">Buy This Product</a>
+                </div>
+                <div class="prod-card">
+                    <h3 class="offer_title">Advanced Gaming Plan </h3>
+                    <p class="offer_title">Que ofrecemos:</p>
+                    <p class="offer_title">CPU: 4 núcleos</p>
+                    <p class="offer_title">RAM: 16GB</p>
+                    <p class="offer_title">Almacenamiento: 100GB</p>
+                    <p class="offer_title">Ancho de Banda: 100Mb/s</p>
+                    <h3 class="offer_title">19.99€</h3>
+                    <a class="cta-button" href="#" target="_blank">Buy This Product</a>
+                </div>
+                <div class="prod-card">
+                    <h3 class="offer_title">Pro Gaming Plan</h3>
+                    <p class="offer_title">Que ofrecemos:</p>
+                    <p class="offer_title">CPU: 4 núcleos</p>
+                    <p class="offer_title">RAM: 16GB</p>
+                    <p class="offer_title">Almacenamiento: 100GB</p>
+                    <p class="offer_title">Ancho de Banda: 100Mb/s</p>
+                    <h3 class="offer_title">54.99€</h3>
+                    <a class="cta-button" href="#" target="_blank">Buy This Product</a>
+                </div>
+                <div class="prod-card">
+                    <h3 class="offer_title">Master Gaming Plan</h3>
+                    <p class="offer_title">Que ofrecemos:</p>
+                    <p class="offer_title">CPU: 4 núcleos</p>
+                    <p class="offer_title">RAM: 16GB</p>
+                    <p class="offer_title">Almacenamiento: 100GB</p>
+                    <p class="offer_title">Ancho de Banda: 100Mb/s</p>
+                    <h3 class="offer_title">64.99€</h3>
+                    <a class="cta-button" href="#" target="_blank">Buy This Product</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Terms Of Service</a>
+                    <a href="#">No Refund Policy</a>
+                </div>
+                <div class="social">
+                    <a href="#">Twitter</a>
+                </div>
+                <p>©2025 Secure Hosts. All rights reserved.</p>
+            </div>
+        </footer>
+    </article>
+
+
+    <!-- ABOUT US -->
+    <article id="sec_about" class="hidden scroll">
+
+        <!-- HERO -->
+        <section id="aboutus" class="hero">
+            <h2>Who we are?</h2>
+            <p>We are a hosting website that give the best safe and fast server hostings</p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Terms Of Service</a>
+                    <a href="#">No Refund Policy</a>
+                </div>
+                <div class="social">
+                    <a href="#">Twitter</a>
+                </div>
+                <p>©2025 Secure Hosts. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </article>
+
+    <!-- ACCOUNT -->
+    <article id="sec_account" class="hidden scroll">
+
+        <!-- HERO -->
+        <section id="aboutus" class="hero">
+            <h2>Don't have an account?</h2>
+            <p>Log in to get full access to the website and save all your purchases and monitorize your servers!</p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Terms Of Service</a>
+                    <a href="#">No Refund Policy</a>
+                </div>
+                <div class="social">
+                    <a href="#">Twitter</a>
+                </div>
+                <p>©2025 Secure Hosts. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </article>
 </body>
 </html>

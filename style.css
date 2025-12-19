@@ -1,3 +1,59 @@
+:root {
+    /** color **/
+    --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+    --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+    --bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
+    --bg-gradient-yellow-2: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+    --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+
+    /* solid */
+    --jet: hsl(0, 0%, 22%);
+    --onyx: hsl(240, 1%, 17%);
+    --eerie-black-1: hsl(240, 2%, 13%);
+    --eerie-black-2: hsl(240, 2%, 12%);
+    --smoky-black: hsl(0, 0%, 7%);
+    --white-1: hsl(0, 0%, 100%);
+    --white-2: hsl(0, 0%, 98%);
+    --orange-yellow-crayola: hsl(45, 100%, 72%);
+    --vegas-gold: hsl(45, 54%, 58%);
+    --light-gray: hsl(0, 0%, 84%);
+    --light-gray-70: hsla(0, 0%, 84%, 0.7);
+    --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+    /** typography **/
+
+    /* font-family */
+    --ff-poppins: 'Poppins', sans-serif;
+
+    /* font-size */
+    --fs-1: 24px;
+    --fs-2: 18px;
+    --fs-3: 17px;
+    --fs-4: 16px;
+    --fs-5: 15px;
+    --fs-6: 14px;
+    --fs-7: 13px;
+    --fs-8: 11px;
+
+    /* font-weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+
+    /** shadow **/
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+    --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+    /** transition **/
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease-in-out;
+}
+
 /* Estilos por defecto */
 * {
     margin: 0;
@@ -10,6 +66,14 @@ body {
     color: #eee;
     font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 2.0;
+}
+
+.scroll::-webkit-scrollbar-track{
+    background: var(--onyx);
+}
+
+.nav-btn{
+    cursor: pointer;
 }
 
 /* Contenedor para centrar contenido */
@@ -39,7 +103,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-  
+
 .logo {
     font-size: 2rem;
     color: #c21414;
@@ -51,28 +115,28 @@ body {
     height: 60px;
     width: auto;
 }
-  
+
 .menu-toggle {
     display: none;
 }
-  
+
 nav {
     display: flex;
 }
-  
-nav a {
+
+nav p {
     margin: 0 1rem;
     color: #eee;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-  
-nav a:hover {
+
+nav p:hover {
     color: #ED1A1A;
     transform: translateY(-2px);
 }
-  
+
 /* HERO */
 .hero {
     background: url('img/hero-bg.jpg') center/cover no-repeat;
@@ -80,24 +144,41 @@ nav a:hover {
     text-align: center;
     color: #fff;
 }
-  
+
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-  
+
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
-  
+
+.explore-btn {
+    background: linear-gradient(180deg, #ED1A1A, #830606);
+    color: #121212;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(180deg, #b41313, #490303);
+    color: #121212 ;
+    transition: background-color 0.3s ease ;
+}
+
 /* SECCIONES */
 .section {
     padding: 4rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
-  
+
 /* PRODCUTOS */
 .h2_prod{
     font-size: 50px;
@@ -111,7 +192,7 @@ nav a:hover {
     padding: 1rem 0;
     scroll-behavior: smooth;
 }
-  
+
 .prod-card {
     min-width: 260px;
     background: #222;
@@ -121,7 +202,7 @@ nav a:hover {
     flex-shrink: 0;
     transition: all 0.3s ease;
 }
-  
+
 .prod-card img {
     width: 100%;
     max-width: 280px;
@@ -131,17 +212,17 @@ nav a:hover {
     margin: 0 auto;
     border-radius: 6px;
 }
-  
+
 .prod-card h3 {
     margin-top: 0.5rem;
     font-size: 1.2rem;
 }
-  
+
 .prod-card p {
     font-size: 0.9rem;
     margin: 0.4rem 0;
 }
-  
+
 .prod-card a {
 
     margin-top: 0.5rem;
@@ -161,8 +242,9 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-  
+
 .cta-button:hover {
     background: linear-gradient(180deg, #b41313, #490303);
     color: #121212 ;
@@ -172,11 +254,11 @@ nav a:hover {
 .offer_title{
     text-align: center;
 }
-  
+
 .prod-card a:hover {
     text-decoration: underline;
 }
-  
+
 .prod-card:hover {
     box-shadow: 0 4px 20px rgba(212, 21, 21, 0.4);
     transform: translateY(-20px);
@@ -189,8 +271,8 @@ nav a:hover {
     padding: 2rem 0;
     text-align: center;
     font-size: 0.9rem;
- }
-  
+}
+
 .footer .footer-links a,
 .footer .social a {
     margin: 0 0.5rem;
@@ -199,39 +281,41 @@ nav a:hover {
     font-weight: 500;
     transition: color 0.3s ease;
 }
-  
+
 .footer .footer-links a:hover,
 .footer .social a:hover {
     color: #eee;
+    transform: translateY(-2px);
 }
-  
+
+.hidden {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav .container {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
     nav {
-      display: none;
-      width: 100%;
-      flex-direction: column;
-      margin-top: 0.5rem;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0.5rem;
     }
     nav.active {
-      display: flex;
+        display: flex;
     }
     nav a {
-      margin: 0.5rem 0;
+        margin: 0.5rem 0;
     }
     .menu-toggle {
-      display: block;
-      cursor: pointer;
-      color: #ED1A1A;
-      font-size: 1.5rem;
-      user-select: none;
-    }
-    .prod-carousel{
-      grid-template-columns: 1fr !important;
-      flex-direction: column;
+        display: block;
+        cursor: pointer;
+        color: #ED1A1A;
+        font-size: 1.5rem;
+        -webkit-user-select: none;
+        user-select: none;
     }
 }  
