@@ -13,35 +13,48 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const sec_about = document.querySelector('#sec_about');
     const sec_account = document.querySelector('#sec_account');
 
+    // Menu responsive
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    // Funcionalidad de los botones del menu
     info.addEventListener('click', ()=>{
-        sec_info.classList.remove('hidden');
-        sec_prod.classList.add('hidden');
-        sec_about.classList.add('hidden');
-        sec_account.classList.add('hidden');
-    });
+        sec_info.classList.remove('hidden')
+        sec_prod.classList.add('hidden')
+        sec_about.classList.add('hidden')
+        sec_account.classList.add('hidden')
+    })
     prod.addEventListener('click', ()=>{
-        sec_info.classList.add('hidden');
-        sec_prod.classList.remove('hidden');
-        sec_about.classList.add('hidden');
-        sec_account.classList.add('hidden');
-    });
+        sec_info.classList.add('hidden')
+        sec_prod.classList.remove('hidden')
+        sec_about.classList.add('hidden')
+        sec_account.classList.add('hidden')
+    })
     prod2.addEventListener('click', ()=>{
-        sec_info.classList.add('hidden');
-        sec_prod.classList.remove('hidden');
-        sec_about.classList.add('hidden');
-        sec_account.classList.add('hidden');
-    });
+        sec_info.classList.add('hidden')
+        sec_prod.classList.remove('hidden')
+        sec_about.classList.add('hidden')
+        sec_account.classList.add('hidden')
+    })
     about.addEventListener('click', ()=>{
-        sec_info.classList.add('hidden');
-        sec_prod.classList.add('hidden');
-        sec_about.classList.remove('hidden');
-        sec_account.classList.add('hidden');
-    });
+        sec_info.classList.add('hidden')
+        sec_prod.classList.add('hidden')
+        sec_about.classList.remove('hidden')
+        sec_account.classList.add('hidden')
+    })
     account.addEventListener('click', ()=>{
-        sec_info.classList.add('hidden');
-        sec_prod.classList.add('hidden');
-        sec_about.classList.add('hidden');
-        sec_account.classList.remove('hidden');
-    });
+        sec_info.classList.add('hidden')
+        sec_prod.classList.add('hidden')
+        sec_about.classList.add('hidden')
+        sec_account.classList.remove('hidden')
+    })
+
+
+    // Menu responsive
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active')
+    })
+
+
 
 })
