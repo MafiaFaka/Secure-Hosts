@@ -52,6 +52,8 @@
     /** transition **/
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease-in-out;
+
+    --trans: rgba(0, 0, 0, 0);
 }
 
 /* Estilos por defecto */
@@ -76,6 +78,11 @@ body {
 .nav-btn{
     cursor: pointer;
 }
+
+article section h2 p a{
+    background-color: var(--trans);
+}
+
 
 /* Contenedor para centrar contenido */
 .container {
@@ -143,6 +150,7 @@ nav p:hover {
     padding: 6rem 1rem;
     text-align: center;
     color: #fff;
+    background-color: var(--trans);
 }
 
 .hero h2 {
@@ -320,24 +328,32 @@ nav p:hover {
         user-select: none;
         width: 30px;
     }
-} 
+}
 
-@keyframes stroke {
+.animacion {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #44ed1a;
+    font-size: 1200px;
+    animation: strokeAnimacion 5s infinite alternate; /*7.5*/
+}
+
+@keyframes strokeAnimacion {
     0% {
-        stroke: white;
+        stroke: #ED1A1A;
         stroke-width: 0;
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
     }
     70% {
-        stroke: white;
+        stroke: #ED1A1A;
     }
     80% {
-        stroke: white;
+        stroke: #ED1A1A;
         stroke-width: 3;
     }
     100% {
-        stroke: white;
+        stroke: #ED1A1A;
         stroke-width: 0;
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
