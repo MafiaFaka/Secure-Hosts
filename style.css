@@ -333,7 +333,39 @@ nav p:hover {
     font-weight: bold;
     color: #44ed1a;
     font-size: 1200px;
-    animation: strokeAnimacion 5s infinite alternate; /*7.5*/
+    animation: strokeAnimacion 10s infinite alternate;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.4;
+}
+.animacion2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #44ed1a;
+    font-size: 1200px;
+    animation: strokeAnimacion 10s infinite alternate;
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.4;
+}
+.animacion3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #44ed1a;
+    font-size: 1200px;
+    animation: strokeAnimacion 10s infinite alternate;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.4;
 }
 
 @keyframes strokeAnimacion {
