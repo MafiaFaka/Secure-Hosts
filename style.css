@@ -79,9 +79,7 @@ body {
     cursor: pointer;
 }
 
-article section h2 p a{
-    background-color: var(--trans);
-}
+
 
 
 /* Contenedor para centrar contenido */
